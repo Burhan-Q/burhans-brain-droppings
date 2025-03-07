@@ -1,0 +1,10 @@
+[project]
+name = "burhans-brain-droppings"
+version = "0.1.0"
+description = "A collection of thoughts."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs-material>=9.6.7",
+    "mkdocs-rss-plugin>=1.17.1",
+]
