@@ -5,6 +5,6 @@ description = "A collection of thoughts."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "mkdocs-material>=9.6.7",
+    "mkdocs-material[imaging]>=9.6.7",
     "mkdocs-rss-plugin>=1.17.1",
 ]
