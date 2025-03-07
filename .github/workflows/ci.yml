@@ -26,4 +26,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: uv sync
-      - run: uv run mkdocs gh-deploy --force
+      - run: source .venv/bin/activate && uv run mkdocs gh-deploy --force
