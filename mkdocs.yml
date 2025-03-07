@@ -2,6 +2,8 @@ site_name: Burhan's Brain Droppings
 site_url: https://burhan-q.github.io/burhans-brain-droppings
 theme:
   name: material
+  icon:
+    logo: fontawesome/solid/brain
   palette: 
     - media: "(prefers-color-scheme: light)"
       scheme: slate
@@ -38,7 +40,12 @@ theme:
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - md_in_html
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
