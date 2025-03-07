@@ -25,6 +25,5 @@ jobs:
           path: .cache 
           restore-keys: |
             mkdocs-material-
-      - run: uv venv .venv --python 3.11 && source .venv/bin/activate
-      - run: uv sync --active
-      - run: mkdocs gh-deploy --force
+      - run: uv venv .venv --python 3.11
+      - run: source .venv/bin/activate && uv sync --active && mkdocs gh-deploy --force
