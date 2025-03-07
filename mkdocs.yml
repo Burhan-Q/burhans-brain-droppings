@@ -1,0 +1,87 @@
+site_name: Burhan's Brain Droppings
+site_url: https://burhan-q.github.io/burhans-brain-droppings
+theme:
+  name: material
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Dark
+      primary: teal
+      accent: purple
+    
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Light
+      primary: purple
+      accent: teal
+  font: false
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.follow
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: false
+      # slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
+      
+  
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      enabled: true
+      # blog_toc: true
+      # blog_dir: blog
+    # authors_profiles: true
+    # post_url_date_format: yyyy-MM-dd
+    # post_url_format: "{date}/{slug}"
+  - meta
+  - tags
+  # - social  # TODO https://squidfunk.github.io/mkdocs-material/plugins/social/#social-cards
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Burhan-Q
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/burhan-qa
+
+nav:
+  - Home: 
+    - Home: index.md
+    - About: about/index.md
+    - Blog: blog/index.md
+  - Blog: 
+    - blog/index.md
+    - Tags: blog/tags.md
+  - About: 
+    - about/index.md
+    - Profile: about/profile.md
