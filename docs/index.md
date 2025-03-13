@@ -31,7 +31,7 @@ A miscellaneous collection of thoughts, projects, and maybe the occasional rant.
 
     Want to know more about my professional history?
 
-    [:octicons-arrow-right-24: View Professional Profile](./about/profile.md)
+    [:octicons-arrow-right-24: View Professional Profile](./about/profile/journey.md)
 
 -   :simple-github:{ .lg .middle } __Projects__
 

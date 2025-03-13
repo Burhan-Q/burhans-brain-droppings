@@ -107,4 +107,6 @@ nav:
     - Tags: blog/tags.md
   - About:
     - about/index.md
-    - Profile: about/profile.md
+    - Profile: 
+      - Professional Experience: about/profile/pro-experience.md
+      - Journey: about/profile/journey.md
