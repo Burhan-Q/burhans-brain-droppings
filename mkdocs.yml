@@ -97,8 +97,8 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/burhan-qa
   analytics:
-    provider:
-    id: G-S1T2W4YHBN
+    provider: google
+    property: G-S1T2W4YHBN
 
 nav:
   - Home:
