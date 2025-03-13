@@ -96,6 +96,9 @@ extra:
       link: https://github.com/Burhan-Q
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/burhan-qa
+  analytics:
+    provider:
+    id: G-S1T2W4YHBN
 
 nav:
   - Home:
@@ -107,6 +110,6 @@ nav:
     - Tags: blog/tags.md
   - About:
     - about/index.md
-    - Profile: 
+    - Profile:
       - Professional Experience: about/profile/pro-experience.md
       - Journey: about/profile/journey.md
