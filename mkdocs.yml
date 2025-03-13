@@ -4,7 +4,7 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/brain
-  palette: 
+  palette:
     - media: "(prefers-color-scheme: light)"
       scheme: slate
       toggle:
@@ -12,7 +12,7 @@ theme:
         name: Dark
       primary: teal
       accent: purple
-    
+
     - media: "(prefers-color-scheme: dark)"
       scheme: default
       toggle:
@@ -40,8 +40,11 @@ theme:
 
 markdown_extensions:
   - admonition
+  - abbr
   - attr_list
   - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -49,16 +52,29 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.superfences
+  - pymdownx.snippets:
+  - pymdownx.superfences:
+      custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - toc:
       permalink: false
-      # slugify: !!python/object/apply:pymdownx.slugs.slugify
-      #   kwds:
-      #     case: lower
-      
-  
+      title: On this Page
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
 plugins:
   - search
   - blog:
@@ -82,13 +98,13 @@ extra:
       link: https://linkedin.com/in/burhan-qa
 
 nav:
-  - Home: 
+  - Home:
     - Home: index.md
     - About: about/index.md
     - Blog: blog/index.md
-  - Blog: 
+  - Blog:
     - blog/index.md
     - Tags: blog/tags.md
-  - About: 
+  - About:
     - about/index.md
     - Profile: about/profile.md
