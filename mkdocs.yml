@@ -86,7 +86,10 @@ plugins:
     # post_url_date_format: yyyy-MM-dd
     # post_url_format: "{date}/{slug}"
   - meta
-  - tags
+  - tags:
+      tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   # - social  # TODO https://squidfunk.github.io/mkdocs-material/plugins/social/#social-cards
 
 
@@ -99,6 +102,15 @@ extra:
   analytics:
     provider: google
     property: G-S1T2W4YHBN
+  tags:
+    LLM: llm
+    Rant: rant
+    Vibe Coding: vibe-coding
+    Trends: trends
+    Opinion: opinion
+    Technology: tech
+    Coding: code
+    Learning: learn
 
 nav:
   - Home:
