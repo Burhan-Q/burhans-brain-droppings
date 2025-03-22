@@ -24,7 +24,7 @@ Likely made popular by a post from Andrej Karpathy on 2025-02-02.
 
 ![Post by Andrej Karpathy](https://github.com/user-attachments/assets/20ee3172-d742-4820-8a78-271fa1af9da4)
 
-??? note "Full post text"
+??? note "Full text of Andrej Karpathy's post"
 
     > There's a new kind of coding I call "vibe coding", where you fully give in to
     > the vibes, embrace exponentials, and forget that the code even exists. It's
@@ -40,6 +40,8 @@ Likely made popular by a post from Andrej Karpathy on 2025-02-02.
     > weekend projects, but still quite amusing. I'm building a project or webapp,
     > but it's not really coding - I just see stuff, say stuff, run stuff, and copy paste
     > stuff, and it mostly works.
+
+---
 
 I'm not going to dig into the post, but just pointing out that this is what kicked off the recent trend. It's not _really_ a new idea, as pointed out by others, 
 [theprimeagen](https://www.twitch.tv/theprimeagen) mentioned, it's just a rebrand of "no-code" solutions. That said, I think the reason that vibe coding has
@@ -76,7 +78,11 @@ degradation of quality in work/effort, primarily driven by the "move fast and de
 work, understanding around how something is built/made, and considerate decision making. Vibe coding is a product of that shift, as it encourages production over 
 methodology and sacrifices quality for minimal effort.
 
+---
+
 ![I built my SaaS with Cursor, now I'm getting hacked.](https://github.com/user-attachments/assets/0f927a6b-43f7-4a1d-bcc1-63aeb91f58c4)
+
+---
 
 ## Who is it for?
 
@@ -130,8 +136,8 @@ only solution)?
 
 According to [OpenAI](https://platform.openai.com/docs/concepts/tokens#tokens), as a rough approximation $1$ token is ~$4$ characters and for anyone curious you can try their 
 [online tokenizer](https://platform.openai.com/tokenizer). As a point of reference, the previous sentence (including all the markdown formatting) was only $55$ tokens using 
-the `GPT-4o` and `GPT-4o mini` tokenizers. Not that much considering that costs are `$/1M tokens`, however this entire article is $6,000$ tokens and while still small, is
-no where near the length of what a live website, SaaS service, or fully developed code project would require. So what's the point about the pricing then?
+the `GPT-4o` and `GPT-4o mini` tokenizers. Not that much considering that costs are `$/1M tokens`, however this entire article is $3,313$ tokens and while still small, is
+nowhere near the length of what a live website, SaaS service, or fully developed code project would require. So what's the point about the pricing then?
 
 Without LLMs, vibe coding wouldn't exist. Since the release of ChatGPT, lots of people and businesses have been looking for ways to extract value from them. Anyone who's 
 been paying attention to the LLM space knows that they're not perfect, and anyone who writes code for a living knows that they can actually be problematic. The LLM that 
@@ -141,6 +147,8 @@ produce working code. That would mean that a service built around the use of tha
 
 The cost isn't just monetary either. As an individual who might be turning to vibe coding with the idea to build something, start a business, or make some money, there are 
 related costs that might come due.
+
+---
 
 ![Reddit post: My project became so big that claude can't properly understand it](https://github.com/user-attachments/assets/57160a21-aa6d-4904-9f84-e3573ac29a04)
 
@@ -165,6 +173,8 @@ related costs that might come due.
     > 
     > If you wanna learn just ask AI to explain what it's changing, how the code works and stuff like that.
 
+---
+
 I don't know the user, but this made the rounds online in developer communities. The top comment on the post sums things up spectacularly.
 
 > I got stressed reading this.
@@ -183,5 +193,5 @@ The big takeaway here is that vibe coding isn't for the benefit of the individua
 you should, but you should do so with skepticism and caution. You should also learn whatever it is you were planning to skip to build your idea. Yes, it will take time. Yes, 
 it might be difficult. It will provide immense value, but you have to put in the effort to tackle the challenge in the first place. If you feel ambitious, you can start with 
 trying to build your idea as part of your learning, but it won't be easy and that should be okay. If you're curious, you can check out a little about 
-[my journey](../../about/profile/journey.md) and read about how I had to deliver a project while leaning something completely new while on the job, maybe it could serve as a 
+[my journey](../../about/profile/journey.md) and read about how I had to deliver a project while learning something completely new while on the job, maybe it could serve as a 
 bit of inspiration to dive into learning something new.
