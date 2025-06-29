@@ -4,5 +4,9 @@ authors:
     description: Creator
     avatar: https://avatars.githubusercontent.com/u/62214284
     url: https://github.com/Burhan-Q
+  Gemma3:
+    name: Gemma3
+    description: LLM
+    avatar: https://github.com/user-attachments/assets/aaf9ea6e-ce9c-4d31-b2e2-02dce781ddfb
 
 # reference: https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.authors_file
