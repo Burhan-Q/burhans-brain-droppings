@@ -26,5 +26,14 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: uv venv .venv --python 3.11
+      - run: source .venv/bin/activate && mkdocs build
+      
+      # Inject meta tag into every HTML file
+      - name: Inject Google verification meta tag
+        run: |
+          source .venv/bin/activate
+          python inject-meta.py
+      
       # - run: source .venv/bin/activate && uv sync --active && mkdocs gh-deploy --force
-      - run: source .venv/bin/activate && uv pip install -U . && mkdocs gh-deploy --force
+      #- run: source .venv/bin/activate && uv pip install -U . && mkdocs gh-deploy --force
+      - run: source .venv/bin/activate && mkdocs gh-deploy --force --no-build --verbose
