@@ -8,5 +8,6 @@ authors:
     name: Gemma3
     description: LLM
     avatar: https://github.com/user-attachments/assets/aaf9ea6e-ce9c-4d31-b2e2-02dce781ddfb
+    url: https://ollama.com/library/gemma3
 
 # reference: https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.authors_file
